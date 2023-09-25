@@ -1,7 +1,7 @@
 import { Controller } from "../controllers";
 import { addUser } from "../services/user";
 
-export const postRoutes = async (req:Request,reqBody:any) =>{
+export const postRoutes = (req:Request,reqBody:any) =>{
     const url = new URL(req.url);
     switch (url.pathname) {
         case '/' : return new Response("Index!");
